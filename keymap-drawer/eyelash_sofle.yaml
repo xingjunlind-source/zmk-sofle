@@ -58,7 +58,7 @@ layers:
   - '&fanyi'
   - $$mdi:apple-keyboard-option$$
   - '&yufa'
-  - '&fanyi'
+  - '&yufa'
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - $$mdi:keyboard-space$$
   - {t: '$$mdi:keyboard-return$$', type: enter}
