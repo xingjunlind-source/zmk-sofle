@@ -53,6 +53,13 @@
             #sensor-binding-cells = <0>;
             tap-ms = <0>;
         };
+
+        new_behavior: new_behavior {
+            compatible = "zmk,behavior-sensor-rotate";
+            label = "NEW_BEHAVIOR";
+            #sensor-binding-cells = <0>;
+            bindings = <&msc SCRL_UP>, <&msc SCRL_DOWN>;
+        };
     };
 
     combos {
@@ -127,7 +134,8 @@
 &kp C_MUTE  &trans           &trans          &trans           &trans           &trans             &mkp LCLK        &trans           &trans           &trans      &trans     &trans
             >;
 
-            sensor-bindings = <&rsr_vol &rsr_trans>;
+            sensor-bindings = <&new_behavior>, <&rsr_trans>;
+
             display-name = "LAYER1";
         };
 
